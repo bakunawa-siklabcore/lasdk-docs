@@ -1,0 +1,28 @@
+# GitHub Pages (Jekyll) config for the LASDK knowledge base.
+# When you publish: copy the contents of kb/ to the ROOT of the public docs repo, so this file sits at the root.
+title: LASDK Docs
+description: Ship what your AI builds, with proof.
+
+# Custom branded theme (matches lasdk.siklabcore.com) — layout in _layouts/default.html, styles in assets/css/.
+# No Jekyll theme gem; the layout is self-contained.
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+# jekyll-relative-links (rewrites [text](foo.md) links), jekyll-optional-front-matter (renders the .md pages that
+# have no front-matter) and jekyll-titles-from-headings (per-page <title> from each page's first heading) are all
+# enabled by default on GitHub Pages — listed here for clarity.
+plugins:
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-titles-from-headings
+
+# README.md is the internal curation gate (replaced by a public README at publish); don't render it as a page.
+exclude:
+  - README.md
+
+# If you serve at lasdk-docs.siklabcore.com: add a CNAME file with that hostname + point a DNS CNAME at
+# bakunawa-siklabcore.github.io, then set:
+# url: https://lasdk-docs.siklabcore.com
