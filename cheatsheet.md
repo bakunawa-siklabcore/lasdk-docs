@@ -42,7 +42,8 @@ One page. Your AI builds; these commands govern it and prove the result. Run `la
 |---|---|
 | `lasdk runs` | List past runs |
 | `lasdk audit <run-id>` | Audit a run's evidence chain |
-| `lasdk dashboard` | Status dashboard |
+| `lasdk dashboard --open` | Team control tower (static HTML) — builds and opens it |
+| `lasdk cockpit --role=<id> --open` | Your role's live cockpit: its tickets, delivery metrics, alerts |
 | `lasdk next` | Suggest the next task |
 | `lasdk ledger` · `lasdk export:evidence` | Task ledger / export the evidence bundle |
 
