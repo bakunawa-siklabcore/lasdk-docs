@@ -36,5 +36,21 @@ LASDK adds exactly that, without slowing your AI down:
 | Just the commands | [Cheatsheet](cheatsheet.md) |
 
 ## Editions
-LASDK has a free **Community** edition and paid **Team / Business / Enterprise** tiers. The core proof-before-Done
-loop is real in every edition — paid tiers add seats and team features.
+LASDK sells two paid tiers: **Pro** and **Team**. There is no Business or Enterprise tier — if you read about one
+here previously, it did not exist.
+
+**Community (free, no licence needed)** — `lasdk assess` and `lasdk certify`, the two judgement commands, plus
+diagnostics (`lasdk doctor`, `--help`, `version`, provider preflight), evidence verification, recovery and export.
+You can check any run's evidence and gate your own repository without paying.
+
+**Pro** — the full governed SDLC: Signal → Contract → Architecture → Implementation → Critic → Audit, earned Done,
+signed evidence, all production roles, commercial use, two activated devices. Bring your own model; no token
+markup.
+
+**Team** — everything in Pro plus an organization policy authority: signed, versioned SDLC profiles with a floor
+individuals cannot weaken, hosted independently-verifiable acceptance records, a CI/PR acceptance gate, and
+named-seat management. Starts at one seat.
+
+Reading a verdict is free; producing the governed work it judges is not. Current pricing is on
+[the pricing page](https://lasdk.siklabcore.com/#pricing) — this page deliberately does not repeat the numbers,
+because a price in two places is a price that goes stale in one of them.
