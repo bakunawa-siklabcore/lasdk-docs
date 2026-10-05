@@ -8,4 +8,4 @@ Siklab Core is a separate user-facing software product from the same maker and u
 
 LASDK does not guarantee correctness, security, completeness, or production readiness. An external AI provider may receive project context under the settings and policies of the provider and coding tool you choose. People responsible for a project decide what to accept and release. The beta's supported tools and capabilities will be confirmed with invited participants.
 
-[Availability and setup details](../index.md) will be updated when the public release is ready.
+See the [product overview](../index.md) for current availability and access information.
