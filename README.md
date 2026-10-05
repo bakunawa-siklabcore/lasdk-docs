@@ -1,19 +1,7 @@
-# LASDK Documentation
+# LASDK documentation
 
-**Ship what your AI builds, with proof.**
+LASDK is a Siklab product for AI-assisted software delivery. It is preparing for closed beta and is not yet generally available.
 
-📖 Read the docs: **https://bakunawa-siklabcore.github.io/lasdk-docs/**
+This documentation describes LASDK's purpose and intended user experience. Beta capabilities and supported tools are confirmed with invited participants. LASDK does not guarantee that software is correct, secure, complete, or ready to release; people remain responsible for reviewing work and deciding what to accept.
 
-LASDK is proof-before-Done for the AI-SDLC. Your AI builds the software; LASDK drives it through a real
-SDLC, has an independent AI critic review the work, gathers real evidence, and refuses "Done" until the
-evidence backs the claim.
-
-> **Requirements:** LASDK drives your own AI — you bring an LLM subscription/API access and a supported AI
-> coding CLI (Claude Code, Codex, …). It doesn't include a model.
-
-- [What is LASDK](concepts/what-is-lasdk.md)
-- [Quickstart](guides/quickstart.md)
-- [Cheatsheet](cheatsheet.md)
-- [Training path](training/README.md)
-
-A product of **Siklab Core** — https://lasdk.siklabcore.com
+Read the [product overview](index.md) or contact [Siklab Core](mailto:lasdk@siklabcore.com) for access enquiries.
