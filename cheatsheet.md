@@ -1,5 +1,57 @@
-# LASDK quick reference
+# LASDK Cheatsheet
 
-LASDK is preparing for closed beta. Invited participants receive the setup and operating notes for their supported build and AI coding tool.
+One page. Your AI builds; these commands govern it and prove the result. Run `lasdk help` for the full list.
 
-This public page is an overview, not a command reference. Do not use commands or configuration examples from third-party posts as instructions for an unreleased build. Read the [product overview](index.md) or contact [Siklab Core](mailto:lasdk@siklabcore.com) for access information.
+## Start here
+| Command | What it does |
+|---|---|
+| `lasdk` | Open the conversational AI agent (any directory) |
+| `lasdk doctor` | Check setup: AI coding CLI, license, workspace — guides gaps |
+| `lasdk setup` / `lasdk onboard` | First-time setup / onboard a workspace |
+| `lasdk studio` · `lasdk tui` | Menu interface |
+
+## Build & prove (the core loop)
+| Command | What it does |
+|---|---|
+| `lasdk build "<task>"` | Governed AI build: Signal → Contract → Architecture → Architecture readiness → Implementation → Critic → Audit |
+| `lasdk assess <run-dir>` | Proof-before-Done over ANY run → `ARTIFACT_READY` / `REFUSE_DONE` / `NEEDS_HUMAN` |
+| `lasdk assess <run-dir> --obligations=<file>` | Assess against explicit obligations |
+| `lasdk review --run <run-id>` | Record *your* verdict on a run as evidence (verdict JSON on stdin). The automated critic is a step inside `lasdk build` — this is the human sign-off it could not give |
+| `lasdk run --list` | List workflows (⚡ parallel, 🐝 swarm) |
+| `lasdk run --workflow=<id> --plan` | Preview the execution plan (no run, no writes) |
+| `lasdk run --workflow=<id> --stream` | Run a workflow with live progress |
+
+## Verify (real evidence)
+| Command | What it does |
+|---|---|
+| `lasdk verify-web --file <page> --viewports --screenshot` | Real multi-viewport browser render evidence |
+| `lasdk verify-web --file <page> --a11y` | Accessibility oracle: reduced-motion + keyboard |
+| `lasdk verify-web --file <page> --scroll` | Motion/animation evidence (a still can't fake it) |
+| `lasdk owasp:api` · `lasdk owasp:mobile` | Security review passes |
+
+## Configure your AI & workspace
+| Command | What it does |
+|---|---|
+| `lasdk provider` | Register your AI CLIs so LASDK can drive them: `scan` / `list` / `add <id> --command <cli>` |
+| `lasdk` → `/role <role> <llm>` | Assign which AI runs which role (`contract`, `architecture`, `worker`, `critic`) — done in the chat, or via `/config` |
+| `lasdk sdlc` | Your SDLC pack: `init` / `show` / `validate` / `sync` |
+| `lasdk roles` / role bundles | What each kind of teammate can do |
+| `lasdk edition` · `lasdk team` | License edition + team/seats |
+
+## Track & audit
+| Command | What it does |
+|---|---|
+| `lasdk runs` | List past runs |
+| `lasdk audit <run-id>` | Audit a run's evidence chain |
+| `lasdk dashboard --open` | Team control tower (static HTML) — builds and opens it |
+| `lasdk cockpit --role=<id> --open` | Your role's live cockpit: its tickets, delivery metrics, alerts |
+| `lasdk next` | Suggest the next task |
+| `lasdk ledger` · `lasdk export:evidence` | Task ledger / export the evidence bundle |
+
+## The AI-first model in 4 lines
+```
+Your AI coding agent   = the builder (writes the code)
+An independent AI      = the critic  (reviews it — never self-review)
+Real evidence          = tests ran, pages rendered, checks executed
+Earned Done            = ARTIFACT_READY only when the evidence proves it
+```
