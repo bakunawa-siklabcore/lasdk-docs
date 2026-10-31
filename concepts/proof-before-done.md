@@ -1,3 +1,5 @@
+---
+---
 # Proof-before-Done
 
 The single idea LASDK is built on: **a completion claim is not completion.** When an AI agent says "done," LASDK

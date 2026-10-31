@@ -1,3 +1,5 @@
+---
+---
 # Module 6 — Workflows & parallelism
 
 **Idea (2 min).** `lasdk build` is one flow. **Workflows** are richer pipelines, and where the work is provably

@@ -1,3 +1,5 @@
+---
+---
 # Module 4 — The independent critic
 
 **Idea (2 min).** The thing that wrote the code can't be the only thing that judges it. LASDK enforces **builder ≠

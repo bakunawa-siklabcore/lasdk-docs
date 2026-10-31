@@ -1,3 +1,5 @@
+---
+---
 # Boundaries and governance
 
 Proof-before-Done answers "is it done?" This page is about the other half: **what each agent is allowed to do while

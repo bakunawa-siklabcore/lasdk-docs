@@ -1,3 +1,5 @@
+---
+---
 # The SDLC flow — how a governed AI build runs
 
 When you run `lasdk build`, your AI doesn't just "write code." LASDK drives it through a real software-delivery

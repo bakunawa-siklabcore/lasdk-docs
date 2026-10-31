@@ -1,3 +1,5 @@
+---
+---
 # Guide: bring your own AI
 
 LASDK doesn't ship a model — it drives **your** AI coding agent. This is the AI-first core: you pick which agent

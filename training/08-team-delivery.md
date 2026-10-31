@@ -1,3 +1,5 @@
+---
+---
 # Module 8 — Team delivery
 
 **Idea (2 min).** Everything so far works solo. On a team, the same proof-before-Done loop scales — seats, roles,

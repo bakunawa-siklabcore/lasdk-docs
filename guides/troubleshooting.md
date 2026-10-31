@@ -1,3 +1,5 @@
+---
+---
 # Troubleshooting
 
 Start with `lasdk doctor` — it checks your setup and guides most issues. Common ones below.

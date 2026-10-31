@@ -1,3 +1,5 @@
+---
+---
 # Module 7 — Your SDLC pack
 
 **Idea (2 min).** LASDK ships generic rails. Your team has its own process, roles, and standards. The **SDLC pack**

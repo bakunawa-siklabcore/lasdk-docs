@@ -1,3 +1,5 @@
+---
+---
 # Module 5 — UI Delivery Assurance
 
 **Idea (2 min).** AI produces UI that *looks* done. The trap: it's functional and polished but ships a generic

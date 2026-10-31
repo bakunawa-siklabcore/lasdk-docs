@@ -5,15 +5,17 @@ description: Ship what your AI builds, with proof.
 
 # Custom branded theme (matches lasdk.siklabcore.com) — layout in _layouts/default.html, styles in assets/css/.
 # No Jekyll theme gem; the layout is self-contained.
+markdown: kramdown
 defaults:
   - scope:
       path: ""
     values:
       layout: default
 
-# jekyll-relative-links (rewrites [text](foo.md) links), jekyll-optional-front-matter (renders the .md pages that
-# have no front-matter) and jekyll-titles-from-headings (per-page <title> from each page's first heading) are all
-# enabled by default on GitHub Pages — listed here for clarity.
+# Every page carries minimal front-matter (`---`/`---`) so Jekyll ALWAYS runs it through the Markdown
+# converter. jekyll-relative-links rewrites [text](foo.md) links; jekyll-titles-from-headings sets each
+# page <title> from its first heading. (jekyll-optional-front-matter is NOT reliably active on GitHub Pages,
+# so we do not depend on it — the explicit front-matter above is what guarantees rendering.)
 plugins:
   - jekyll-relative-links
   - jekyll-optional-front-matter

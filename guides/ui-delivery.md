@@ -1,3 +1,5 @@
+---
+---
 # Guide: ship a real UI, not a generic template
 
 AI is great at producing UI that *looks* finished. The failure mode: it's functional and polished but ships a

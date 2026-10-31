@@ -1,3 +1,5 @@
+---
+---
 # Quickstart — your first governed AI build
 
 Goal: install LASDK, point it at your AI, and get your first **proof-before-Done** build in about 10 minutes.

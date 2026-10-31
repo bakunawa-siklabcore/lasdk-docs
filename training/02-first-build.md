@@ -1,3 +1,5 @@
+---
+---
 # Module 2 — Your first governed build
 
 **Idea (2 min).** You describe a task; your AI builds it; LASDK drives the whole SDLC and proves the result. One
